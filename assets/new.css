@@ -4,8 +4,6 @@ body{
 	width: 100%;
 	padding: 0 px;
 	margin: 0 auto;
-
-	font-size: 18px;
 	font-weight: normal;
 	font-family: 'Jost', sans-serif;
 }
@@ -13,6 +11,7 @@ body{
 .container{
 	width: 1200px;
 	margin: 0 auto;
+	background-color: #842722;
 }
 
 /*header design*/
@@ -69,23 +68,9 @@ span{
 	border-radius: 48px;
 }
 
-.row {
-  margin: 8px -16px;
-}
 
-.row,
-.row > .column {
-  padding: 8px;
-}
-
-.column {
-  float: left;
+.col{
   width: 25%;
   align-items: center;
   justify-content: center;
-}
-
-.content {
-  background-color: #cc6677;
-  padding: 10px;
 }

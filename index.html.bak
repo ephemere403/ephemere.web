@@ -4,7 +4,6 @@
 <!-- assets holds CSS file and its needs(bg, fonts and favicon), while images is used only for images. -->
 
 <!-- a lot of this head is about how favicon should be perceived on different devices-->
-<!-- the DIV that will contain the widget -->
 
 <head>
 	<meta charset="utf-8">
@@ -18,7 +17,7 @@
     <link rel="mask-icon" href="assets/safari-pinned-tab.svg" color="#5bbad5">
 
     <link rel="icon" type="image/x-icon" href="assets/favicon.png">
-    <link rel="icon" id="small-img" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
 
     <!-- bootstrap assets -->
@@ -26,56 +25,20 @@
 
     <link rel="stylesheet" type="text/css" href="assets/main.css">
 	<title> style it. @ EPHEMERE.WEB  </title>
-	<script>
-	function getCookie(name) {
-	var setPos = document.cookie.indexOf(name + '='), stopPos = document.cookie.indexOf(';', setPos);
-	return !~setPos ? null : document.cookie.substring(
-	setPos, ~stopPos ? stopPos : undefined).split('=')[1];
-	}
-
-	function setCookie(name, val, days, path) {
-	var cookie = name + "=" +  escape(val) + "";
-	if (days) {
-	var date = new Date();
-	date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-	cookie += ";expires=" + date.toGMTString();
-	}
-	cookie += ";" + (path || "path=/");
-	console.log(cookie);
-	document.cookie = cookie;
-	}
-
-	var username = getCookie("username");
-	if (!username) {
-	setCookie("username", prompt("please enter your name:"), 365);
-	} else {
-	alert("welcome again " + username);
-	}
-	</script>
-
+	
 </head>
 
 <body>
-	<script src="jquery-2.2.4.min.js"></script>
-	<script src="jquery.zoom.min.js"> </script>
-	<script src="main.js" ></script>
-	
-
 	<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
 	  <div class="container-fluid">
 	    <button class="navbar-toggler navbar-toggle-left " type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
 	          <span class="navbar-toggler-icon"></span>
 	    </button>
 
-	    <div class="navbar-brand">
-	      <img class="logo-1" id="logo-1" src="images/ephemere.png" alt="" width="120" height="100" id="logo">
-		</div>
-
-		<div class="navbar-title">
-			<a href="index.html">
-				<h1> Ephemere.web&copy; </h1>
-			</a>
-		</div>
+	    <a class="navbar-brand" href="#">
+	      <img src="images/ephemere.png" alt="" width="120" height="100" id="logo">
+	      <h1> Ephemere.web&copy; </h1>
+	    </a>
 
 
 	    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
@@ -108,14 +71,14 @@
 		<div class = "container">
 			<div class="row" id="gallery"> 
 			<div class = "col-md" id="jb">
-				<img class="img-fluid"  src="images/t-shirt.png" alt="web t-shirt">
+				<img class="img-fluid "  src="images/t-shirt.png" alt="web t-shirt">
 				<div class="overlay"> 
 					<div class="button"> <li> <a href="couture.html"> SF Jordan Belfort T-Shirt </a> </li> </div>
 				</div>
 			</div>
 			
 			<div class = "col-md" id="ep">
-				<img class="img-fluid" src="images/t-shirt2.png" alt="web t-shirt">
+				<img class="img-fluid " src="images/t-shirt2.png" alt="web t-shirt">
 				<div class="overlay" > 
 					<div class="button"> <li> <a href="couture.html"> SF Ephemere T-Shirt </a> </li> </div>
 				</div>
@@ -151,16 +114,8 @@
 			<div class="col-4">
 				<img class=img-fluid src="images/milk.gif" alt="milk" class="milkgif">
 			</div>
-			<article class="box" id="stick">
-				<h3 class="active" id="click">Ways of Mental Health</h3>
-				<ol style="display:none;" id="hide"> 
-					<li> sleep at nighttime, no matter how much </li>
-					<li> hydrate yourself </li>
-					<li> manifest your social importance </li>
-					<li> manage your stress, but don't stop emotions pouring </li>
-				</ol>
-			</article>
-			<!--<div class="col-8">
+
+			<div class="col-8">
 				<h2> Ways of Mental Health </h2>
 				<ol>
 					<li> sleep at nighttime, no matter how much </li>
@@ -170,7 +125,7 @@
 				</ol>
 				<p> Pellentesque rutrum mi sed pretium rutrum. Maecenas sit amet urna nisi. Curabitur fermentum lacus at lacus feugiat consequat. Praesent eu tristique est. Nunc interdum rutrum iaculis. Nulla venenatis risus lorem, vel euismod felis malesuada id. Cras placerat maximus lorem et porttitor. </p>
 				
-			</div>-->
+			</div>
 			
 			<div class="mentaladvices">
 				
@@ -185,7 +140,7 @@
 	<div class="container">
 		<div class="endloop">
 			<div class="col-12">
-				<div class="gif"> <img src="images/endloop.gif" alt="milk" class="endgif"> </div>
+				<div class="img-responsive"> <img src="images/endloop.gif" alt="milk" class="endgif"> </div>
 			</div>
 			
 		</div>
@@ -198,44 +153,24 @@
 	
 	<footer class="footer" id="footer">
 		<div class="container" id ="section-contacts">
-			
-			<article class="box" id="stick">
-				<h2 class="active" id="click">Creators contact</h2>
-				<div style="display:none;" id="hide"> 
-					<div class="col-5">Author: Aldyyarov Valikhan, Aulbekov Adilzhan, Yerassyl Pirzhanov, Baurzhan Eskozhanov
-					</div>
+			<div class="row"> 
+				<div class="col-5"> Author: Aldyyarov Valikhan, Aulbekov Adilzhan
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-12"> 
 					<object><a href="mailto:211021@astanait.edu.kz">email: 211021@astanait.edu.kz</a> <a href="mailto:211349@astanait.edu.kz">email: 211349@astanait.edu.kz</a> </object> 
-					<object>     tg:@jenecomprendepas, @Lomtik_zefira, @x0r19, @Gtrhfly </object>
+					<object>     tg:jenecomprendepas, tg:Lomtik_zefira </object>
 					<object class="last"> made by 2022y. </object>
 				</div>
-			</article>
+			</div>
+			
+
 		</div>
 
 
 	</footer>
-	<div class="weatherWidget" ></div>
-
-	<script>
-		window.weatherWidgetConfig =  window.weatherWidgetConfig || [];
-		window.weatherWidgetConfig.push({
-			selector:".weatherWidget",
-			apiKey:"UX796V5NQLMB2DLMXSL9CNXT2", //Sign up for your personal key
-			location:"Kazakhstan, Nur-Sultan", //Enter an address
-			unitGroup:"metric", //"us" or "metric"
-			forecastDays:5, //how many days forecast to show
-			title: "Kazakhstan, Nur-Sultan", //optional title to show in the
-			showTitle:true,
-			showConditions:true
-		});
-
-		(function() {
-			var d = document, s = d.createElement('script');
-			s.src = 'https://www.visualcrossing.com/widgets/forecast-simple/weather-forecast-widget-simple.js';
-			s.setAttribute('data-timestamp', +new Date());
-			(d.head || d.body).appendChild(s);
-		})();
-	</script>
-	
 
 </body>
 

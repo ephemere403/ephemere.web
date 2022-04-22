@@ -36,12 +36,12 @@ body{
 	height: 9.6vw;
 }
 
-.navbar-brand a{
+.navbar-class a h1{
 	color: #000000;
 	text-decoration: none;
 }
 
-.navbar-brand a:visited{
+.navbar-class a:visited h1{
 	color: #000000;
 	text-decoration: none;
 }

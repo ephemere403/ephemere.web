@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <head>
 	<head>
 	<meta charset="utf-8">
@@ -27,16 +28,34 @@
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+	<script src="jquery-2.2.4.min.js"></script>
+	<script src="main.js" ></script>
+	<script src="journal.js"></script>
+
+	<script>
+		function play() {
+		  var audio = document.getElementById("audio");
+		  audio.play();
+		}
+	  </script>
+
+	  <audio id="audio" src="assets/warp2.WAV"></audio>
+
+	  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
 		  <div class="container-fluid">
 		    <button class="navbar-toggler navbar-toggle-left " type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
 		          <span class="navbar-toggler-icon"></span>
 		    </button>
 
-		    <a class="navbar-brand" href="index.html">
-		      <img src="images/ephemere.png" alt="" width="120" height="100" id="logo">
-		      <h1> Ephemere.web&copy; </h1>
-		    </a>
+			<div class="navbar-brand">
+				<img class="logo-1" id="logo-1" src="images/ephemere.png" alt="" width="120" height="100" id="logo">
+			  </div>
+	  
+			<div class="navbar-title">
+			  <a href="index.html">
+				  <h1> Ephemere.web&copy; </h1>
+			  </a>
+			</div>
 
 
 		    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
@@ -60,7 +79,6 @@
 		        </div>
 		  </div>
 		</nav>
-
 
 	<section class = "order">
 		<div class = "container">
@@ -119,20 +137,15 @@
 				<input type="text" id="lname" name="lname"> <br>
 				<label for="lname">Your Email address:</label>
 				<input type="text" id="email" name="email"> <br>
-				<input type="submit" class="buttonform" value="Subscribe" onclick= "alert('await for us to contact your mail for journal subscription!')">
+				<input type="submit" class="buttonform" value="Subscribe" onclick = "play()">
 				</form>
 			</div>
-
+ 
 			<hr>
 
 			<div class="container">
 				<div class="row">
 					<button type="button" class="btn btn-lg btn-info" data-bs-toggle="popover" title="Popover title" data-bs-content="We didn't know what to add for popover:)">Click to toggle popover</button>
-					
-					var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-					var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-					  return new bootstrap.Popover(popoverTriggerEl)
-					})
 				</div>
 				
 			</div>
@@ -142,7 +155,7 @@
 
 	</section>
 
-
+	
 
 </body>
 
