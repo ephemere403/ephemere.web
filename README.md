@@ -1,5 +1,5 @@
 # ephemere.web
- website HTML : CSS : (Bootstrap coming)
+ website HTML : CSS : Bootstrap : JS : MongoDB
 
 <<<<<<< HEAD
 website with pretty simple architecture
