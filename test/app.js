@@ -42,11 +42,18 @@ app.post('/sign-up', async (req,res) =>{
 
 	try{
 		const newUser = await reguser.save()
-		res.status(201).json(newUser)
+		res.status(201).redirect("index")
 
 	}catch{
 		res.status(400)
 
 	}
 })
+
+//login
+
+app.get('/log-in', (req,res) => {
+	res.render('log-in')
+})
+
 

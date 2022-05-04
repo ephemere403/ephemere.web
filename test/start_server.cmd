@@ -1,1 +1,1 @@
-npm i body-parser
+npm start
